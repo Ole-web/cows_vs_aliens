@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cows vs Aliens</title>
-    <link rel="stylesheet" href="styling css/styles.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
   </head>
   <body>
-    <canvas id="gameCanvas"></canvas>
-    <div class="main"></div>
-    <img id="movable" src="src/assets/kenney_alien-ufo-pack/" alt="playerOne" />
+    <section id="start-screen">
+      <button id="start-game-button">start game</button>
+    </section>
+    <section id="in-game-screen">
+      <div id="background-image-loop"></div>
+    </section>
+    <section id="end-game-screen"></section>
+
+    <!-- <div class="main"></div> -->
+    <!-- <img id="movable" src="src/assets/images/cow.png" alt="playerOne" />
     <img
       class="obstacle"
       src="Assets/kenney_alien-ufo-pack/PNG/shipBeige_manned.png"
@@ -34,7 +41,7 @@
       class="obstacle"
       src="Assets/kenney_alien-ufo-pack/PNG/shipYellow_manned.png"
       alt="obstacle"
-    />
+    /> -->
     <script type="module" src="src/js/index.js"></script>
   </body>
 </html>

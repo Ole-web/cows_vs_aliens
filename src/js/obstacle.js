@@ -1,4 +1,4 @@
-class Obstacle {
+export default class Obstacle {
   constructor(element) {
     this.element = element;
     this.resetPosition();
@@ -24,9 +24,3 @@ class Obstacle {
     this.element.style.top = `${this.y}px`;
   }
 }
-const obstacleElements = document.querySelectorAll(".obstacle");
-const obstacles = Array.from(obstacleElements).map(
-  (element) => new Obstacle(element)
-);
-
-export { obstacles };
